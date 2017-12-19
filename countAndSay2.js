@@ -18,4 +18,11 @@ function countAndSay(n) {
   return outStr;
 }
 
-countAndSay(8);
+var startNum = 1;
+var outNum = 1;
+var num = 5;
+for (let i = 0; i < num-1; i++) {
+  outNum = countAndSay(startNum);
+  startNum = Number(outNum);
+}
+console.log(outNum);
