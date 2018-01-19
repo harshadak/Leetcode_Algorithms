@@ -14,9 +14,6 @@ function ListNode(val) {
  
 var deleteDuplicates = function(head) {
   if (!head) {
-    return null;
-  }
-  if (!head.next) {
     return head;
   }
   var temp = head;
